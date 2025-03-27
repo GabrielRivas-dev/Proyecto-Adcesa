@@ -44,7 +44,6 @@ if(isset($_POST['Enviar'])){
                     $clave =$row['clave'];
                     
                 
-                    echo "<p class='exitoso'>Bienvenido $Pnombre</p>";
                     session_start();
                     $_SESSION['logueado']=true;
                     $_SESSION['id'] = $idUsuario;
