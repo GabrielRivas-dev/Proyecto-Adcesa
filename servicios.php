@@ -6,12 +6,18 @@
     <link rel="stylesheet" href="servicios.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poiret+One&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cherry+Cream+Soda&display=swap" rel="stylesheet">
     <title>Document</title>
 </head>
 <body>
 <header  class="header">
         <img class="logoHeader" src="./Imagenes/logo.png" alt="logo">
-        <h1>Servicios</h1>
+        <h1 class="significadoicono">Servicios</h1>
         <button id="abrir" class="abrir-menu"><i class="bi bi-list"></i></button>
         <nav class="nav" id="nav">
             <button class="cerrar-menu" id="cerrar"><i class="bi bi-x"></i></button>
@@ -25,10 +31,6 @@
             </ul>
         </nav>
     </header>
-
-    <div class="significadoicono">
-        <h1>Servicios</h1>
-    </div>
 
     <div class="subtitulos">
         <a onclick="desplegarAvisos()"><h2>Avisos</h2></a>

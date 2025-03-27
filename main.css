@@ -86,7 +86,7 @@
 }
 .infoEmpresa{
     min-height: 70vh;
-    background-image: linear-gradient(0deg, #ffffff 0%, #02295d 100%);
+    background-image: linear-gradient(0deg, #02295d0c 0%, #02295d 100%);
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -109,11 +109,12 @@
 .servicios{
     padding: 10px;
     height: 40vh;
-    background-image: linear-gradient(0deg, #ffffff 0%, #ffffffe7 100%);
+    background-image: linear-gradient(0deg, #02295d0c 0%, #02295d0c 100%);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 8px;
+    
 }
 .servicios div{
     min-height: 200px;
@@ -123,23 +124,24 @@
     text-align: center;
     flex-direction: column;
     font-size: 10px;
-    background-image: linear-gradient(0deg, #ffffff 0%, #ffffff 100%);
+    background-image: linear-gradient(0deg, #0239d30a 0%, #0239d30a 100%);
     border-radius: 40px;
-    border: solid 1px rgb(0, 0, 0);
 }
+
 .servicios div img{
     height: 85%;
 }
 .servicios div h1{
-    color: #000000; 
-    font-family: "Kodchasan", sans-serif;
+    color: #000000;
+    font-family: "Poiret One", sans-serif;
     font-weight: 800;
-    font-style: normal;
+    font-style: normal; 
+
 }
 
 footer{
     height: 4rem;
-    background-color: rgb(255, 255, 255);
+    background-image: linear-gradient(0deg, #006effcb 0%, #02295d0c 100%);
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -150,6 +152,6 @@ footer{
     text-align: center;
     color: #000000;
     font-family: "Kodchasan", sans-serif;
-    font-weight: 400;
+    font-weight: 300;
     font-style: normal;
 }
