@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    }
+    body{
+        display: flex;
+        background-image: linear-gradient(0deg, #02295D 0%, #10FAE4 100%);
+    }
+    .imagen{
+        display: flex;
+        width: 50%;
+        height: 100vh;
+        align-items: center;
+        justify-content: center;
+    }
+    .imagen img{
+     width: 50%;
+    }
+    
+    .input{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+    .input label{
+        font-size: 22px;
+        font-family: 'Times New Roman', Times, serif;
+        color: #fff;
+        letter-spacing: 2px;
+    }
+    .inputRadio label{
+        display: inline-flex;
+        font-size: 22px;
+        font-family: 'Times New Roman', Times, serif;
+        color: #fff;
+        letter-spacing: 2px;
+        margin-bottom: 20px;
+    }
+    .inputRadio label p{
+        margin-left: 5px;
+    }
+    .input input, .inputRadio input{
+        height: 2rem;
+        width: 80%;
+        border-radius: 10px;
+        border: 1px solid rgb(255, 255, 255);
+        padding: 4px 10px;
+        font-size: 18px;
+        background: transparent;
+        outline: none;
+        color: #fff;
+    }
+    .formulario{
+        margin: auto;
+    }
+    .formulario form{
+        max-height: 100vh;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+  justify-items: stretch;
+  align-items: stretch;
+  column-gap: 12px;
+  row-gap: 20px;
+}
+.columna h1{
+    font-size: 3rem;
+    color: #ffffff;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    letter-spacing: 2px;
+    margin-bottom: 1rem;
+}
+.button{
+    background-color: #0233bb;
+    color: #fff;
+    border: none;
+    width: 15rem;
+    height: 2.5rem;
+    font-size: 28px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    letter-spacing: 2px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+.button:hover{
+    background-color: #2e60ec;
+}
+    
