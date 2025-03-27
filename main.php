@@ -1,3 +1,24 @@
+<?php
+/*session_start();
+if($_SESSION['logueado']==false){
+    header('Location: inicio.php');
+                exit();
+}
+$idUsuario = $_SESSION['id'];
+$Snombre = $_SESSION['segundo_nombre'];
+$Papellido = $_SESSION['primer_apellido'];
+$Sapellido = $_SESSION['segundo_apellido'];
+$telefono = $_SESSION['telefono'];
+$email = $_SESSION['email'];
+$nacionalidad = $_SESSION['nacionalidad'];
+$identidad = $_SESSION['identidad'];
+$ciudad = $_SESSION['ciudad'];
+$municipio = $_SESSION['municipio'];
+$direccion = $_SESSION['direccion'];
+$clave = $_SESSION['clave'];
+$Pnombre = $_SESSION['primer_nombre'];
+include 'conexion.php';*/
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
