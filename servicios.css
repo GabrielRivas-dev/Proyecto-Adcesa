@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
-    background-image: linear-gradient(0deg, #10FAE4 0%, #02295D 100%);
+    background-image: linear-gradient(0deg, #02295D 0%, #02295D 100%);
 }
 
 .logoHeader {
@@ -88,14 +88,22 @@
 .servicios{
     padding: 10px;
     height: 40vh;
-    background-image: linear-gradient(0deg, #ffffff 0%, #02295de7 100%);
+    background-image: linear-gradient(0deg, #0bb1c72f 0%, #0bb1c72f 100%);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
     gap: 8px;
 }
-
-.servicios div{
+.avisos, .banderines, .caja, .display, .letrero, .logo, .porta-accesorios, .recuerdos, .stand{
+    padding: 10px;
+    height: 40vh;
+    background-image: linear-gradient(0deg, #0bb1c72f 0%, #0bb1c72f 100%);
+    display: none;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 8px;
+}
+.servicios div, .avisos div, .banderines div, .caja div, .display div, .letrero div, .logo div, .porta-accesorios div, .recuerdos div, .stand div{
     min-height: 240px;
     align-items: center;
     display: flex;
@@ -103,14 +111,14 @@
     text-align: center;
     flex-direction: column;
     font-size: 10px;
-    background-image: linear-gradient(0deg, #ffffffd8 0%, #0bb1c7 100%);
+    background-image: linear-gradient(0deg, #ffffffd8 0%, #ffffff 100%);
     border-radius: 40px;
     padding: 12px;
 }
-.servicios div img{
+.servicios div img, .avisos div img, .banderines div img, .caja div img, .display div img, .letrero div img, .logo div img, .porta-accesorios div img, .recuerdos div img, .stand div img{
     height: 85%;
 }
-.servicios div h2{
+.servicios div h2, .avisos div h2, .banderines div h2, .caja div h2, .display div h2, .letrero div h2, .logo div h2, .porta-accesorios div h2, .recuerdos div h2, .stand div h2{
     color: #000000; 
     font-family: "Kodchasan", sans-serif;
     font-weight: 200;
@@ -127,10 +135,7 @@
     background-image: linear-gradient(0deg, #0774ced8 0%, #0bb1c7 100%);
     border-radius: 40px;
 }
-.servicios div img{
-    height: 85%;
-}
-.servicios div h1{
+.servicios div h1, .avisos div h1, .banderines div h1, .caja div h1, .display div h1, .letrero div h1, .logo div h1, .porta-accesorios div h1, .recuerdos div h1, .stand div h1{
     color: #000000; 
     font-family: "Kodchasan", sans-serif;
     font-weight: 800;
@@ -139,13 +144,13 @@
 
 .significadoicono{
     min-height: 10vh;
-    background-image: linear-gradient(0deg, #02295de7 0%, #10FAE4 100%);
+    background-image: linear-gradient(0deg, #ffffff 0%, #ffffff 100%);
     align-items: center;
     justify-content: center;
     text-align: center;
 }
 .significadoicono h1{
-    color: #011b4b;
+    color: #000000;
     font-size: 60px;
     margin-bottom: 8px;
     font-optical-sizing: auto;
@@ -169,4 +174,8 @@ footer{
     font-family: "Kodchasan", sans-serif;
     font-weight: 400;
     font-style: normal;
+}
+.subtitulos{
+    text-align: center;
+
 }

@@ -22,9 +22,48 @@ if(isset($_POST['Enviar'])){
             $idUsuario= $row['id'];
           
             if ($clave==$ClaveUsuario) {
-                    echo "<p>Bienvenido</p>";
-                    header('Location: main.php');
-                    exit();
+                $sql = "SELECT primer_nombre, segundo_nombre, primer_apellido, segundo_apellido, telefono, email, 
+                nacionalidad, identidad, ciudad, municipio, direccion, clave FROM usuarios WHERE id=?";
+                $stmt = $conex->prepare($sql);
+                $stmt->bind_param("s", $idUsuario);
+                $stmt->execute();
+                $result = $stmt->get_result();
+                
+                if ($row = $result->fetch_assoc()) {
+                    $NombreUsuario =$row['primer_nombre'];
+                    $ApellidoUsuario =$row['segundo_nombre'];
+                    $CedulaUsuario =$row['primer_apellido'];
+                    $FechaUsuario =$row['segundo_apellido'];
+                    $GeneroUsuario =$row['telefono'];
+                    $EmailUsuario =$row['email'];
+                    $ClaveUsuario =$row['nacionalidad'];
+                    $imagenUsuario =$row['identidad'];
+                    $GeneroUsuario =$row['Genero'];
+                    $EmailUsuario =$row['ciudad'];
+                    $ClaveUsuario =$row['municipio'];
+                    $imagenUsuario =$row['direccion'];
+                    
+                
+                    echo "<p class='exitoso'>Bienvenido $NombreUsuario</p>";
+                    session_start();
+                    $_SESSION['logueado']=true;
+                    $_SESSION['id'] = $idUsuario;
+                    $_SESSION['Nombre'] = $NombreUsuario;
+                    $_SESSION['Apellido'] = $ApellidoUsuario;
+                    $_SESSION['Cedula'] = $CedulaUsuario;
+                    $_SESSION['Fecha'] = $FechaUsuario;
+                    $_SESSION['Genero'] = $GeneroUsuario;
+                    $_SESSION['Email'] = $EmailUsuario;
+                    $_SESSION['Clave'] = $ClaveUsuario;
+                    $_SESSION['imagen'] = $imagenUsuario;
+                    $_SESSION['Genero'] = $GeneroUsuario;
+                    $_SESSION['Email'] = $EmailUsuario;
+                    $_SESSION['Clave'] = $ClaveUsuario;
+                    $_SESSION['imagen'] = $imagenUsuario;
+                    header('Location: PaginaPrincipal.php');
+                exit();
+                }
+                
                 }
                 else {
                     echo "<p>Contraseña incorrecta</p>";

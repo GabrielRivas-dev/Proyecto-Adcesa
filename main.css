@@ -10,7 +10,7 @@
     align-items: center;
     justify-content: space-between;
     padding: 2rem;
-    background-image: linear-gradient(0deg, #10FAE4 0%, #02295D 100%);
+    background-image: linear-gradient(0deg, #02295D 0%, #02295D 100%);
 }
 
 .logoHeader {
@@ -86,7 +86,7 @@
 }
 .infoEmpresa{
     min-height: 70vh;
-    background-image: linear-gradient(0deg, #02295de7 0%, #10FAE4 100%);
+    background-image: linear-gradient(0deg, #ffffff 0%, #02295d 100%);
     align-items: center;
     justify-content: center;
     text-align: center;
@@ -109,7 +109,7 @@
 .servicios{
     padding: 10px;
     height: 40vh;
-    background-image: linear-gradient(0deg, #ffffff 0%, #02295de7 100%);
+    background-image: linear-gradient(0deg, #ffffff 0%, #ffffffe7 100%);
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
@@ -123,8 +123,9 @@
     text-align: center;
     flex-direction: column;
     font-size: 10px;
-    background-image: linear-gradient(0deg, #ffffffd8 0%, #0bb1c7 100%);
+    background-image: linear-gradient(0deg, #ffffff 0%, #ffffff 100%);
     border-radius: 40px;
+    border: solid 1px rgb(0, 0, 0);
 }
 .servicios div img{
     height: 85%;
