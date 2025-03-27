@@ -30,37 +30,36 @@ if(isset($_POST['Enviar'])){
                 $result = $stmt->get_result();
                 
                 if ($row = $result->fetch_assoc()) {
-                    $NombreUsuario =$row['primer_nombre'];
-                    $ApellidoUsuario =$row['segundo_nombre'];
-                    $CedulaUsuario =$row['primer_apellido'];
-                    $FechaUsuario =$row['segundo_apellido'];
-                    $GeneroUsuario =$row['telefono'];
-                    $EmailUsuario =$row['email'];
-                    $ClaveUsuario =$row['nacionalidad'];
-                    $imagenUsuario =$row['identidad'];
-                    $GeneroUsuario =$row['Genero'];
-                    $EmailUsuario =$row['ciudad'];
-                    $ClaveUsuario =$row['municipio'];
-                    $imagenUsuario =$row['direccion'];
+                    $Pnombre =$row['primer_nombre'];
+                    $Snombre =$row['segundo_nombre'];
+                    $Papellido =$row['primer_apellido'];
+                    $Sapellido =$row['segundo_apellido'];
+                    $telefono =$row['telefono'];
+                    $email =$row['email'];
+                    $nacionalidad =$row['nacionalidad'];
+                    $identidad =$row['identidad'];
+                    $ciudad =$row['ciudad'];
+                    $municipio =$row['municipio'];
+                    $direccion =$row['direccion'];
+                    $clave =$row['clave'];
                     
                 
-                    echo "<p class='exitoso'>Bienvenido $NombreUsuario</p>";
                     session_start();
                     $_SESSION['logueado']=true;
                     $_SESSION['id'] = $idUsuario;
-                    $_SESSION['Nombre'] = $NombreUsuario;
-                    $_SESSION['Apellido'] = $ApellidoUsuario;
-                    $_SESSION['Cedula'] = $CedulaUsuario;
-                    $_SESSION['Fecha'] = $FechaUsuario;
-                    $_SESSION['Genero'] = $GeneroUsuario;
-                    $_SESSION['Email'] = $EmailUsuario;
-                    $_SESSION['Clave'] = $ClaveUsuario;
-                    $_SESSION['imagen'] = $imagenUsuario;
-                    $_SESSION['Genero'] = $GeneroUsuario;
-                    $_SESSION['Email'] = $EmailUsuario;
-                    $_SESSION['Clave'] = $ClaveUsuario;
-                    $_SESSION['imagen'] = $imagenUsuario;
-                    header('Location: PaginaPrincipal.php');
+                    $_SESSION['primer_nombre'] = $Pnombre;
+                    $_SESSION['segundo_nombre'] = $Snombre;
+                    $_SESSION['primer_apellido'] = $Papellido;
+                    $_SESSION['segundo_apellido'] = $Sapellido;
+                    $_SESSION['telefono'] = $telefono;
+                    $_SESSION['email'] = $email;
+                    $_SESSION['nacionalidad'] = $nacionalidad;
+                    $_SESSION['identidad'] = $identidad;
+                    $_SESSION['ciudad'] = $ciudad;
+                    $_SESSION['municipio'] = $municipio;
+                    $_SESSION['direccion'] = $direccion;
+                    $_SESSION['clave'] = $clave;
+                    header('Location: main.php');
                 exit();
                 }
                 
@@ -75,6 +74,12 @@ if(isset($_POST['Enviar'])){
         } else {
             echo "<p>no se enviaron los datos</p>";
         }
+
+        $stmt->close();
+        $conex->close();
+    }
+
+?>
 
         $stmt->close();
         $conex->close();
